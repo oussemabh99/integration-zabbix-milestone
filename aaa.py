@@ -23,7 +23,7 @@ with open('data.csv', 'r') as csvfile:
 key=fa.zabbix_connect(url)
 name=fa.get_name(key,url)
 Id=fa.Id_detecter(key,url)
-command = '$User="qnbts-video\\oussema";$PWord = ConvertTo-SecureString -String "Qnb1234." -AsPlainText -Force;$Credential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $User, $PWord;Connect-ManagementServer -server  127.0.0.1 -Credential $Credential; Get-VmsCameraReport | Export-Csv -Path "test.csv" -NoTypeInformation'
+command = '$User="qnbts-video\\oussema";$PWord = ConvertTo-SecureString -String "your_password" -AsPlainText -Force;$Credential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $User, $PWord;Connect-ManagementServer -server  127.0.0.1 -Credential $Credential; Get-VmsCameraReport | Export-Csv -Path "test.csv" -NoTypeInformation'
 while(True): 
  subprocess.run(['powershell.exe', '-Command', command])
  data = dict()
