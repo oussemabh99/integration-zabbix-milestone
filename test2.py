@@ -6,12 +6,12 @@ import datetime
 cnx = mysql.connector.connect(
     host='localhost',  # Replace with the actual hostname
     user='root',  # Replace with your MySQL username
-    password='Qnb1234.',  # Replace with your MySQL password
+    password='password',  # Replace with your MySQL password
     database='milebix'  # Replace with the name of your MySQL database
 )
 print(cnx)
 # PowerShell command
-command = '$User="qnbts-video\\oussema";$PWord = ConvertTo-SecureString -String "Qnb1234." -AsPlainText -Force;$Credential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $User, $PWord;Connect-ManagementServer -server  127.0.0.1 -Credential $Credential; Get-VmsCameraReport | Export-Csv -Path "test.csv" -NoTypeInformation'
+command = '$User="qnbts-video\\oussema";$PWord = ConvertTo-SecureString -String "password" -AsPlainText -Force;$Credential = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $User, $PWord;Connect-ManagementServer -server  127.0.0.1 -Credential $Credential; Get-VmsCameraReport | Export-Csv -Path "test.csv" -NoTypeInformation'
 #x.affiche(conn)
 # Execute the PowerShell command
 subprocess.run(['powershell.exe', '-Command', command])
