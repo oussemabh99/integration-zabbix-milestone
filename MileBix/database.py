@@ -3,8 +3,8 @@ import pyodbc
 # Informations de connexion
 server = '192.168.0.168'
 database = 'database_test'
-username = 'QNBTS-VIDEO\\oussema'
-password = 'Qnb1234.'
+username = 'PASSWORDTS-VIDEO\\oussema'
+password = 'PASSWORD1234.'
 
 # Chaîne de connexion
 connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}"
