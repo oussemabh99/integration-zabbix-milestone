@@ -3,7 +3,7 @@ import sys
 cnx = mysql.connector.connect(
     host='127.0.0.1',  # Replace with the actual hostname
     user='root',  # Replace with your MySQL username
-    password='Qnb1234.',  # Replace with your MySQL password
+    password='password1234.',  # Replace with your MySQL password
     database='Milebix'  # Replace with the name of your MySQL database
 )
 sql2="select ErrorNoConnection from zabbix_iteam where Id='"+ sys.argv[1]+"'"
